@@ -65,7 +65,21 @@ class Program
                 case 3:
                 {
                     Console.WriteLine("Qual o nome do aluno a ser procurado?");
-                    
+                    string procurarAluno = Console.ReadLine();
+
+                    foreach (Aluno aluno in alunos)
+                    {
+                        if (procurarAluno == aluno.Nome)
+                        {
+                            Console.WriteLine($"Aluno: {aluno.Nome}\nIdade: {aluno.Idade}");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Aluno não encontrado!");
+                        }
+                        Console.WriteLine("Aperte qualquer tecla para voltar!");
+                        Console.ReadKey();
+                    }
                     break;
                 }
 
