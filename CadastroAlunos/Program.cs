@@ -64,7 +64,7 @@ class Program
                 }
                 case 3:
                 {
-                    Console.WriteLine("Qual o nome do aluno a ser procurado?");
+                    Console.WriteLine("Digite o nome do aluno a ser procurado: ");
                     string procurarAluno = Console.ReadLine();
 
                     foreach (Aluno aluno in alunos)
@@ -80,6 +80,36 @@ class Program
                         Console.WriteLine("Aperte qualquer tecla para voltar!");
                         Console.ReadKey();
                     }
+                    break;
+                }
+                case 4:
+                {
+                    bool alunoRemovido = false;
+                    Console.WriteLine("Digite o nome do aluno a ser removido: ");
+                    string procurarAluno = Console.ReadLine();
+
+                    for (int i = 0; i < alunos.Count; i++)
+                    {
+                        if (alunos[i].Nome == procurarAluno)
+                        {
+                            alunos.RemoveAt(i);
+                            Console.WriteLine("Aluno removido!");
+                            alunoRemovido = true;
+                        }
+                    }
+
+                    if (alunoRemovido != true)
+                    {
+                        Console.WriteLine("Aluno não encontrado!");
+                    }
+                    Console.WriteLine("Aperte qualquer tecla para voltar");
+                    Console.ReadKey();
+                    break;
+                }
+                default:
+                {
+                    Console.WriteLine("Opção Inválida, aperte qualquer tecla para voltar");
+                    Console.ReadKey();
                     break;
                 }
 
