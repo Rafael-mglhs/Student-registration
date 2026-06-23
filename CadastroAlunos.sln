@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroAlunos", "CadastroAlunos\CadastroAlunos.csproj", "{EEFD1108-D6EC-4D93-B6CE-728CD0CEC658}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEFD1108-D6EC-4D93-B6CE-728CD0CEC658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEFD1108-D6EC-4D93-B6CE-728CD0CEC658}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEFD1108-D6EC-4D93-B6CE-728CD0CEC658}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEFD1108-D6EC-4D93-B6CE-728CD0CEC658}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
